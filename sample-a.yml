@@ -1,0 +1,15 @@
+#!/usr/bin/env ansible-playbook -i localhost,
+---
+- name: test output
+  hosts: localhost
+  gather_facts: no
+  vars:
+      ansible_connection: local
+  tasks:
+
+    - name: 3 lines on stdout and 2 on stderr with rc=0
+      shell: seq 3; >&2 echo "stderr line1\nstderr line2"
+
+    - name: 3 lines on stdout and 2 on stderr with rc=1
+      shell: seq 3; >&2 echo "stderr line1\nstderr line2"; exit 1
+

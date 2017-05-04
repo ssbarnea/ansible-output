@@ -1,0 +1,8 @@
+#!/bin/bash
+#set -ex
+mkdir -p output
+for FORMAT in default debug dense json junit minimal oneline profile_tasks selective skippy timer tree
+do
+  echo $FORMAT
+  ANSIBLE_STDOUT_CALLBACK=$FORMAT ./sample-a.yml &> output/$FORMAT.log
+done
