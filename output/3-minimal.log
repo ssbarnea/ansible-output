@@ -1,0 +1,25 @@
+Using /Users/ssbarnea/.ansible.cfg as config file
+1 plays in ./sample-a.yml
+META: ran handlers
+Using module file /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/modules/commands/command.py
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea
+<localhost> EXEC /bin/sh -c 'echo ~ && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679339.76-265593342334459 `" && echo ansible-tmp-1496679339.76-265593342334459="` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679339.76-265593342334459 `" ) && sleep 0'
+<localhost> PUT /var/folders/dn/bdsfszyj63569bgkwf1jsrw80000gn/T/tmp3B_r7n TO /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679339.76-265593342334459/command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679339.76-265593342334459/ /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679339.76-265593342334459/command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679339.76-265593342334459/command.py; rm -rf "/Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679339.76-265593342334459/" > /dev/null 2>&1 && sleep 0'
+localhost | SUCCESS | rc=0 >>
+200
+201400
+401
+Using module file /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/modules/commands/command.py
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea
+<localhost> EXEC /bin/sh -c 'echo ~ && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679348.39-19635739792441 `" && echo ansible-tmp-1496679348.39-19635739792441="` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679348.39-19635739792441 `" ) && sleep 0'
+<localhost> PUT /var/folders/dn/bdsfszyj63569bgkwf1jsrw80000gn/T/tmpU3bele TO /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679348.39-19635739792441/command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679348.39-19635739792441/ /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679348.39-19635739792441/command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679348.39-19635739792441/command.py; rm -rf "/Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679348.39-19635739792441/" > /dev/null 2>&1 && sleep 0'
+localhost | FAILED | rc=1 >>
+200
+201400
+401

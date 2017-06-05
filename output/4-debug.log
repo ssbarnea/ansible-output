@@ -1,0 +1,94 @@
+Using /Users/ssbarnea/.ansible.cfg as config file
+Set default localhost to localhost
+Loading callback plugin debug of type stdout, v2.0 from /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/plugins/callback/__init__.pyc
+
+PLAYBOOK: sample-a.yml *********************************************************
+1 plays in ./sample-a.yml
+
+PLAY [test output] *************************************************************
+META: ran handlers
+
+TASK [2 lines on stdout and 2 on stderr with rc=0] *****************************
+task path: /Users/ssbarnea/redhat/work/ansible-output/sample-a.yml:10
+Using module file /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/modules/commands/command.py
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea
+<localhost> EXEC /bin/sh -c 'echo ~ && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.07-160770418712766 `" && echo ansible-tmp-1496679338.07-160770418712766="` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.07-160770418712766 `" ) && sleep 0'
+<localhost> PUT /var/folders/dn/bdsfszyj63569bgkwf1jsrw80000gn/T/tmpMvIAbh TO /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.07-160770418712766/command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.07-160770418712766/ /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.07-160770418712766/command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.07-160770418712766/command.py; rm -rf "/Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.07-160770418712766/" > /dev/null 2>&1 && sleep 0'
+changed: [localhost] => {
+    "changed": true, 
+    "cmd": "seq 200 201; >&2 seq 400 401", 
+    "delta": "0:00:00.043593", 
+    "end": "2017-06-05 17:15:43.654545", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "seq 200 201; >&2 seq 400 401", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }
+    }, 
+    "rc": 0, 
+    "start": "2017-06-05 17:15:43.610952"
+}
+
+STDOUT:
+
+200
+201
+
+
+STDERR:
+
+400
+401
+
+TASK [2 lines on stdout and 2 on stderr with rc=1] *****************************
+task path: /Users/ssbarnea/redhat/work/ansible-output/sample-a.yml:13
+Using module file /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/modules/commands/command.py
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea
+<localhost> EXEC /bin/sh -c 'echo ~ && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679344.98-212401260286644 `" && echo ansible-tmp-1496679344.98-212401260286644="` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679344.98-212401260286644 `" ) && sleep 0'
+<localhost> PUT /var/folders/dn/bdsfszyj63569bgkwf1jsrw80000gn/T/tmp0h3Sl8 TO /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679344.98-212401260286644/command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679344.98-212401260286644/ /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679344.98-212401260286644/command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679344.98-212401260286644/command.py; rm -rf "/Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679344.98-212401260286644/" > /dev/null 2>&1 && sleep 0'
+fatal: [localhost]: FAILED! => {
+    "changed": true, 
+    "cmd": "seq 200 201; >&2 seq 400 401; exit 1", 
+    "delta": "0:00:00.023995", 
+    "end": "2017-06-05 17:15:50.256122", 
+    "failed": true, 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "seq 200 201; >&2 seq 400 401; exit 1", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }
+    }, 
+    "rc": 1, 
+    "start": "2017-06-05 17:15:50.232127"
+}
+
+STDOUT:
+
+200
+201
+
+
+STDERR:
+
+400
+401
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=1    changed=1    unreachable=0    failed=1   
+

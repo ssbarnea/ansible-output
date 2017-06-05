@@ -1,0 +1,3 @@
+Using /Users/ssbarnea/.ansible.cfg as config file
+ [WARNING]: The tree callback is defaulting to ~/.ansible/tree, as an invalid
+directory was provided: /Users/ssbarnea/.ansible/tree

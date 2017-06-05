@@ -1,0 +1,31 @@
+
+PLAY [test output] *************************************************************
+
+TASK [2 lines on stdout and 2 on stderr with rc=0] *****************************
+changed: [localhost]
+
+TASK [2 lines on stdout and 2 on stderr with rc=1] *****************************
+fatal: [localhost]: FAILED! => {
+    "changed": true, 
+    "cmd": "seq 200 201; >&2 seq 400 401; exit 1", 
+    "delta": "0:00:00.146670", 
+    "end": "2017-06-05 17:15:50.471859", 
+    "failed": true, 
+    "rc": 1, 
+    "start": "2017-06-05 17:15:50.325189"
+}
+
+STDOUT:
+
+200
+201
+
+
+STDERR:
+
+400
+401
+
+PLAY RECAP *********************************************************************
+localhost                  : ok=1    changed=1    unreachable=0    failed=1   
+

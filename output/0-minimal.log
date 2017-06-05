@@ -1,0 +1,8 @@
+localhost | SUCCESS | rc=0 >>
+200
+201400
+401
+localhost | FAILED | rc=1 >>
+200
+201400
+401

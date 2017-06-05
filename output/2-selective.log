@@ -1,0 +1,10 @@
+Using /Users/ssbarnea/.ansible.cfg as config file
+1 plays in ./sample-a.yml
+META: ran handlers
+[1m# 2 lines on stdout and 2 on stderr with rc=0 *****************************************************************************[0m
+  * [1m[34mlocalhost[0m                  - [93mchanged=True[0m -- [93m[0m -------------------------------------------------
+[1m# 2 lines on stdout and 2 on stderr with rc=1 *****************************************************************************[0m
+  * [1m[34mlocalhost[0m                  - [91mFAILED!!![0m -- [91m[0m ----------------------------------------------------
+
+[1m# STATS *******************************************************************************************************************[0m
+[91mlocalhost    : ok=1	changed=1	failed=1	unreachable=0[0m

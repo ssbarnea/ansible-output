@@ -1,0 +1,20 @@
+Using /Users/ssbarnea/.ansible.cfg as config file
+Set default localhost to localhost
+Loading callback plugin timer of type aggregate, v2.0 from /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/plugins/callback/__init__.pyc
+1 plays in ./sample-a.yml
+META: ran handlers
+Using module file /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/modules/commands/command.py
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea
+<localhost> EXEC /bin/sh -c 'echo ~ && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.73-247790995502378 `" && echo ansible-tmp-1496679338.73-247790995502378="` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.73-247790995502378 `" ) && sleep 0'
+<localhost> PUT /var/folders/dn/bdsfszyj63569bgkwf1jsrw80000gn/T/tmpgR2Ioo TO /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.73-247790995502378/command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.73-247790995502378/ /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.73-247790995502378/command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.73-247790995502378/command.py; rm -rf "/Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679338.73-247790995502378/" > /dev/null 2>&1 && sleep 0'
+Using module file /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/modules/commands/command.py
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea
+<localhost> EXEC /bin/sh -c 'echo ~ && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679347.91-95480300570108 `" && echo ansible-tmp-1496679347.91-95480300570108="` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679347.91-95480300570108 `" ) && sleep 0'
+<localhost> PUT /var/folders/dn/bdsfszyj63569bgkwf1jsrw80000gn/T/tmp00XkTb TO /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679347.91-95480300570108/command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679347.91-95480300570108/ /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679347.91-95480300570108/command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679347.91-95480300570108/command.py; rm -rf "/Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679347.91-95480300570108/" > /dev/null 2>&1 && sleep 0'
+Playbook run took 0 days, 0 hours, 0 minutes, 22 seconds

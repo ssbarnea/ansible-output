@@ -1,0 +1,26 @@
+Using /Users/ssbarnea/.ansible.cfg as config file
+Set default localhost to localhost
+Loading callback plugin selective of type stdout, v2.0 from /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/plugins/callback/__init__.pyc
+1 plays in ./sample-a.yml
+META: ran handlers
+Using module file /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/modules/commands/command.py
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea
+<localhost> EXEC /bin/sh -c 'echo ~ && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.86-10909746847514 `" && echo ansible-tmp-1496679337.86-10909746847514="` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.86-10909746847514 `" ) && sleep 0'
+<localhost> PUT /var/folders/dn/bdsfszyj63569bgkwf1jsrw80000gn/T/tmp5UfTAZ TO /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.86-10909746847514/command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.86-10909746847514/ /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.86-10909746847514/command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.86-10909746847514/command.py; rm -rf "/Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.86-10909746847514/" > /dev/null 2>&1 && sleep 0'
+[1m# 2 lines on stdout and 2 on stderr with rc=0 *****************************************************************************[0m
+  * [1m[34mlocalhost[0m                  - [93mchanged=True[0m -- [93m[0m -------------------------------------------------
+Using module file /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/modules/commands/command.py
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea
+<localhost> EXEC /bin/sh -c 'echo ~ && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679346.81-45369778742351 `" && echo ansible-tmp-1496679346.81-45369778742351="` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679346.81-45369778742351 `" ) && sleep 0'
+<localhost> PUT /var/folders/dn/bdsfszyj63569bgkwf1jsrw80000gn/T/tmp0AB1mf TO /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679346.81-45369778742351/command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679346.81-45369778742351/ /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679346.81-45369778742351/command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679346.81-45369778742351/command.py; rm -rf "/Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679346.81-45369778742351/" > /dev/null 2>&1 && sleep 0'
+[1m# 2 lines on stdout and 2 on stderr with rc=1 *****************************************************************************[0m
+  * [1m[34mlocalhost[0m                  - [91mFAILED!!![0m -- [91m[0m ----------------------------------------------------
+
+[1m# STATS *******************************************************************************************************************[0m
+[91mlocalhost    : ok=1	changed=1	failed=1	unreachable=0[0m

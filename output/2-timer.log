@@ -1,0 +1,4 @@
+Using /Users/ssbarnea/.ansible.cfg as config file
+1 plays in ./sample-a.yml
+META: ran handlers
+Playbook run took 0 days, 0 hours, 0 minutes, 20 seconds

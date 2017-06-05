@@ -1,0 +1,19 @@
+Using /Users/ssbarnea/.ansible.cfg as config file
+ [WARNING]: The `junit_xml` python module is not installed. Disabling the
+`junit` callback plugin.
+1 plays in ./sample-a.yml
+META: ran handlers
+Using module file /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/modules/commands/command.py
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea
+<localhost> EXEC /bin/sh -c 'echo ~ && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.15-203949997788362 `" && echo ansible-tmp-1496679337.15-203949997788362="` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.15-203949997788362 `" ) && sleep 0'
+<localhost> PUT /var/folders/dn/bdsfszyj63569bgkwf1jsrw80000gn/T/tmp3tJocB TO /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.15-203949997788362/command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.15-203949997788362/ /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.15-203949997788362/command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.15-203949997788362/command.py; rm -rf "/Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679337.15-203949997788362/" > /dev/null 2>&1 && sleep 0'
+Using module file /Users/ssbarnea/.venv/rh/lib/python2.7/site-packages/ansible/modules/commands/command.py
+<localhost> ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea
+<localhost> EXEC /bin/sh -c 'echo ~ && sleep 0'
+<localhost> EXEC /bin/sh -c '( umask 77 && mkdir -p "` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679345.76-151035902041959 `" && echo ansible-tmp-1496679345.76-151035902041959="` echo /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679345.76-151035902041959 `" ) && sleep 0'
+<localhost> PUT /var/folders/dn/bdsfszyj63569bgkwf1jsrw80000gn/T/tmpR7wyz_ TO /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679345.76-151035902041959/command.py
+<localhost> EXEC /bin/sh -c 'chmod u+x /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679345.76-151035902041959/ /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679345.76-151035902041959/command.py && sleep 0'
+<localhost> EXEC /bin/sh -c '/usr/bin/python /Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679345.76-151035902041959/command.py; rm -rf "/Users/ssbarnea/.ansible/tmp/ansible-tmp-1496679345.76-151035902041959/" > /dev/null 2>&1 && sleep 0'

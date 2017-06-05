@@ -1,0 +1,11 @@
+Using /Users/ssbarnea/.ansible.cfg as config file
+1 plays in ./sample-a.yml
+META: ran handlers
+localhost | SUCCESS | rc=0 >>
+200
+201400
+401
+localhost | FAILED | rc=1 >>
+200
+201400
+401
