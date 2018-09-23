@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi4 { text-decoration: underline; }
+.ansi31 { color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.ansi33 { color: #aa5500; }
+.ansi34 { color: #0000aa; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+<span class="ansi34">Using /Users/ssbarnea/.ansible.cfg as config file</span>
+<span class="ansi1">PLAY 1: TEST OUTPUT</span>
+<span class="ansi4">task 1.</span>Sunday 23 September 2018  18:07:11 +0100 (0:00:01.337)       0:00:01.337 ****** 
+<span class="ansi4">task 1:</span> <span class="ansi33">localhost</span><span class="ansi4">task 1: 2 lines on stdout and 2 on stderr with rc=0</span>
+<span class="ansi33">changed: localhost: {"changed": true, "cmd": "seq 200 201; &gt;&amp;2 seq 400 401", "rc": 0, "stderr": "400\n401", "stderr_lines": ["400", "401"], "stdout": "200\n201"}
+</span><span class="ansi4">task 2.</span>Sunday 23 September 2018  18:07:17 +0100 (0:00:06.428)       0:00:07.765 ****** 
+<span class="ansi4">task 2:</span> <span class="ansi31">localhost</span><span class="ansi4">task 2: 2 lines on stdout and 2 on stderr with rc=1</span>
+<span class="ansi31">failed: localhost: {"changed": true, "cmd": "seq 200 201; &gt;&amp;2 seq 400 401; exit 1", "msg": "non-zero return code", "rc": 1, "stderr": "400\n401", "stderr_lines": ["400", "401"], "stdout": "200\n201"}
+</span><span class="ansi1"></span><span class="ansi1 ansi4">SUMMARY</span>
+<span class="ansi31">localhost</span>                  : <span class="ansi32">ok=1   </span> <span class="ansi33">changed=1   </span> unreachable=0    <span class="ansi31">failed=1   </span>
+Sunday 23 September 2018  18:07:22 +0100 (0:00:04.715)       0:00:12.481 ****** 
+=============================================================================== 
+2 lines on stdout and 2 on stderr with rc=0 -------------------------------------------------------------------------------------------------------------------------------------- 6.43s
+2 lines on stdout and 2 on stderr with rc=1 -------------------------------------------------------------------------------------------------------------------------------------- 4.71s
+Playbook run took 0 days, 0 hours, 0 minutes, 11 seconds
+
+</pre>
+</body>
+
+</html>

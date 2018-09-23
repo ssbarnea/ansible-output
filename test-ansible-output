@@ -1,13 +1,14 @@
 #!/bin/bash
-#set -ex
+set -eou pipefail
 mkdir -p output
-for FORMAT in default debug dense json junit minimal oneline profile_tasks selective skippy timer tree
+rm -rf output/*
+for FORMAT in actionable default debug dense json junit minimal null oneline profile_roles profile_tasks selective skippy stderr timer tree unixy yaml
 do
   for VERBOSITY in 0 1 2 3 4
   do
-    FOLDER="${FORMAT}_v${VERBOSITY}"
-     #/$VERBOSITY
-    ANSIBLE_STDOUT_CALLBACK=$FORMAT ANSIBLE_VERBOSITY=$VERBOSITY ./sample-a.yml >output/${VERBOSITY}-${FORMAT}.log 2>&1 &
+    FOLDER="output/${VERBOSITY}"
+    mkdir -p $FOLDER
+    ANSIBLE_STDOUT_CALLBACK=$FORMAT ANSIBLE_VERBOSITY=$VERBOSITY ./sample-a.yml 2>&1 | ansi2html > ${FOLDER}/${FORMAT}.log.html 2>&1 &
   done
 done
 wait

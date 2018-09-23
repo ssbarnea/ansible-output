@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi34 { color: #0000aa; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+<span class="ansi34">ansible-playbook 2.5.3</span>
+<span class="ansi34">  config file = /Users/ssbarnea/.ansible.cfg</span>
+<span class="ansi34">  configured module search path = [u'/Users/ssbarnea/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']</span>
+<span class="ansi34">  ansible python module location = /Users/ssbarnea/.pyenv/versions/2.7.14/lib/python2.7/site-packages/ansible</span>
+<span class="ansi34">  executable location = /Users/ssbarnea/.pyenv/versions/2.7.14/bin/ansible-playbook</span>
+<span class="ansi34">  python version = 2.7.14 (default, Jul 27 2018, 16:44:08) [GCC 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.2)]</span>
+<span class="ansi34">Using /Users/ssbarnea/.ansible.cfg as config file</span>
+<span class="ansi34">1 plays in ./sample-a.yml</span>
+<span class="ansi34">META: ran handlers</span>
+Sunday 23 September 2018  18:07:11 +0100 (0:00:01.260)       0:00:01.260 ****** 
+Sunday 23 September 2018  18:07:17 +0100 (0:00:06.224)       0:00:07.485 ****** 
+{
+    "plays": [
+        {
+            "play": {
+                "id": "7a00403a-7300-c3d2-b2f2-000000000006", 
+                "name": "test output"
+            }, 
+            "tasks": [
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false, 
+                            "_ansible_parsed": true, 
+                            "changed": true, 
+                            "cmd": "seq 200 201; &gt;&amp;2 seq 400 401", 
+                            "delta": "0:00:00.020067", 
+                            "end": "2018-09-23 18:07:17.279293", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "seq 200 201; &gt;&amp;2 seq 400 401", 
+                                    "_uses_shell": true, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "stdin": null, 
+                                    "warn": true
+                                }
+                            }, 
+                            "rc": 0, 
+                            "start": "2018-09-23 18:07:17.259226", 
+                            "stderr": "400\n401", 
+                            "stderr_lines": [
+                                "400", 
+                                "401"
+                            ], 
+                            "stdout": "200\n201", 
+                            "stdout_lines": [
+                                "200", 
+                                "201"
+                            ]
+                        }
+                    }, 
+                    "task": {
+                        "id": "7a00403a-7300-c3d2-b2f2-000000000008", 
+                        "name": "2 lines on stdout and 2 on stderr with rc=0"
+                    }
+                }, 
+                {
+                    "hosts": {
+                        "localhost": {
+                            "_ansible_no_log": false, 
+                            "_ansible_parsed": true, 
+                            "changed": true, 
+                            "cmd": "seq 200 201; &gt;&amp;2 seq 400 401; exit 1", 
+                            "delta": "0:00:00.020222", 
+                            "end": "2018-09-23 18:07:19.968963", 
+                            "invocation": {
+                                "module_args": {
+                                    "_raw_params": "seq 200 201; &gt;&amp;2 seq 400 401; exit 1", 
+                                    "_uses_shell": true, 
+                                    "chdir": null, 
+                                    "creates": null, 
+                                    "executable": null, 
+                                    "removes": null, 
+                                    "stdin": null, 
+                                    "warn": true
+                                }
+                            }, 
+                            "msg": "non-zero return code", 
+                            "rc": 1, 
+                            "start": "2018-09-23 18:07:19.948741", 
+                            "stderr": "400\n401", 
+                            "stderr_lines": [
+                                "400", 
+                                "401"
+                            ], 
+                            "stdout": "200\n201", 
+                            "stdout_lines": [
+                                "200", 
+                                "201"
+                            ]
+                        }
+                    }, 
+                    "task": {
+                        "id": "7a00403a-7300-c3d2-b2f2-000000000009", 
+                        "name": "2 lines on stdout and 2 on stderr with rc=1"
+                    }
+                }
+            ]
+        }
+    ], 
+    "stats": {
+        "localhost": {
+            "changed": 1, 
+            "failures": 1, 
+            "ok": 1, 
+            "skipped": 0, 
+            "unreachable": 0
+        }
+    }
+}
+Sunday 23 September 2018  18:07:20 +0100 (0:00:02.809)       0:00:10.294 ****** 
+=============================================================================== 
+2 lines on stdout and 2 on stderr with rc=0 -------------------------------------------------------------------------------------------------------------------------------------- 6.22s
+/Users/ssbarnea/os/os/ansible-output/sample-a.yml:10 -----------------------------------------------------------------------------------------------------------------------------------
+2 lines on stdout and 2 on stderr with rc=1 -------------------------------------------------------------------------------------------------------------------------------------- 2.81s
+/Users/ssbarnea/os/os/ansible-output/sample-a.yml:13 -----------------------------------------------------------------------------------------------------------------------------------
+Playbook run took 0 days, 0 hours, 0 minutes, 9 seconds
+
+</pre>
+</body>
+
+</html>

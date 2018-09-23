@@ -1,8 +1,0 @@
-Using /Users/ssbarnea/.ansible.cfg as config file
-[0;0m[s[2K[u[0;0m[2K[1mPLAY 1: TEST OUTPUT[u[0;0m
-[s[2K[u[0;0m[4mtask 1.[0;0m[u[0;0m[2K[7l[4mtask 1:[0;0m [0;33mlocalhost[0;0m[7h[u[0;0m[2K[4mtask 1: 2 lines on stdout and 2 on stderr with rc=0[u[0;0m
-[s[2K[u[0;0m[2K[0;33mchanged: localhost: {"changed": true, "cmd": "seq 200 201; >&2 seq 400 401", "rc": 0, "stderr": "400\n401", "stderr_lines": ["400", "401"], "stdout": "200\n201"}
-[0;0m[s[2K[u[0;0m[4mtask 2.[0;0m[u[0;0m[2K[7l[4mtask 2:[0;0m [0;31mlocalhost[0;0m[7h[u[0;0m[2K[4mtask 2: 2 lines on stdout and 2 on stderr with rc=1[u[0;0m
-[s[2K[u[0;0m[2K[0;31mfailed: localhost: {"changed": true, "cmd": "seq 200 201; >&2 seq 400 401; exit 1", "rc": 1, "stderr": "400\n401", "stderr_lines": ["400", "401"], "stdout": "200\n201"}
-[0;0m[s[2K[u[0;0m[2K[1m[4mSUMMARY[u[0;0m
-[s[2Klocalhost                  : ok=1    changed=1    unreachable=0    failed=1   

@@ -1,5 +1,0 @@
-Using /Users/ssbarnea/.ansible.cfg as config file
- [WARNING]: The `junit_xml` python module is not installed. Disabling the
-`junit` callback plugin.
-1 plays in ./sample-a.yml
-META: ran handlers

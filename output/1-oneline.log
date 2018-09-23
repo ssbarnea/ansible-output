@@ -1,3 +1,0 @@
-Using /Users/ssbarnea/.ansible.cfg as config file
-localhost | SUCCESS | rc=0 | (stdout) 200\n201 (stderr) 400\n401
-localhost | FAILED! => {"changed": true, "cmd": "seq 200 201; >&2 seq 400 401; exit 1", "delta": "0:00:00.035131", "end": "2017-06-05 17:15:47.313220", "failed": true, "rc": 1, "start": "2017-06-05 17:15:47.278089", "stderr": "400\n401", "stderr_lines": ["400", "401"], "stdout": "200\n201", "stdout_lines": ["200", "201"]}

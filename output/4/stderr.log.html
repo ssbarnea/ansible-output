@@ -1,0 +1,132 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi1 { font-weight: bold; }
+.ansi30 { color: #000316; }
+.ansi31 { color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.ansi33 { color: #aa5500; }
+.ansi34 { color: #0000aa; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+<span class="ansi34">ansible-playbook 2.5.3</span>
+<span class="ansi34">  config file = /Users/ssbarnea/.ansible.cfg</span>
+<span class="ansi34">  configured module search path = [u'/Users/ssbarnea/.ansible/plugins/modules', u'/usr/share/ansible/plugins/modules']</span>
+<span class="ansi34">  ansible python module location = /Users/ssbarnea/.pyenv/versions/2.7.14/lib/python2.7/site-packages/ansible</span>
+<span class="ansi34">  executable location = /Users/ssbarnea/.pyenv/versions/2.7.14/bin/ansible-playbook</span>
+<span class="ansi34">  python version = 2.7.14 (default, Jul 27 2018, 16:44:08) [GCC 4.2.1 Compatible Apple LLVM 9.1.0 (clang-902.0.39.2)]</span>
+<span class="ansi34">Using /Users/ssbarnea/.ansible.cfg as config file</span>
+<span class="ansi34">setting up inventory plugins</span>
+<span class="ansi34">Set default localhost to localhost</span>
+<span class="ansi34">Parsed localhost, inventory source with host_list plugin</span>
+<span class="ansi34">Loading callback plugin stderr of type stdout, v2.0 from /Users/ssbarnea/.pyenv/versions/2.7.14/lib/python2.7/site-packages/ansible/plugins/callback/stderr.pyc</span>
+<span class="ansi34">Loading callback plugin profile_tasks of type aggregate, v2.0 from /Users/ssbarnea/.pyenv/versions/2.7.14/lib/python2.7/site-packages/ansible/plugins/callback/profile_tasks.pyc</span>
+<span class="ansi34">Loading callback plugin timer of type aggregate, v2.0 from /Users/ssbarnea/.pyenv/versions/2.7.14/lib/python2.7/site-packages/ansible/plugins/callback/timer.pyc</span>
+
+PLAYBOOK: sample-a.yml ******************************************************************************************************************************************************************
+<span class="ansi34">1 plays in ./sample-a.yml</span>
+
+PLAY [test output] **********************************************************************************************************************************************************************
+<span class="ansi34">META: ran handlers</span>
+
+TASK [2 lines on stdout and 2 on stderr with rc=0] **************************************************************************************************************************************
+<span class="ansi1 ansi30">task path: /Users/ssbarnea/os/os/ansible-output/sample-a.yml:10</span>
+Sunday 23 September 2018  18:07:13 +0100 (0:00:02.090)       0:00:02.090 ****** 
+<span class="ansi34">Using module file /Users/ssbarnea/.pyenv/versions/2.7.14/lib/python2.7/site-packages/ansible/modules/commands/command.py</span>
+<span class="ansi34">&lt;localhost&gt; ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea</span>
+<span class="ansi34">&lt;localhost&gt; EXEC /bin/sh -c '/usr/bin/python &amp;&amp; sleep 0'</span>
+<span class="ansi33">changed: [localhost] =&gt; {</span>
+<span class="ansi33">    "changed": true, </span>
+<span class="ansi33">    "cmd": "seq 200 201; &gt;&amp;2 seq 400 401", </span>
+<span class="ansi33">    "delta": "0:00:00.021738", </span>
+<span class="ansi33">    "end": "2018-09-23 18:07:21.946446", </span>
+<span class="ansi33">    "invocation": {</span>
+<span class="ansi33">        "module_args": {</span>
+<span class="ansi33">            "_raw_params": "seq 200 201; &gt;&amp;2 seq 400 401", </span>
+<span class="ansi33">            "_uses_shell": true, </span>
+<span class="ansi33">            "chdir": null, </span>
+<span class="ansi33">            "creates": null, </span>
+<span class="ansi33">            "executable": null, </span>
+<span class="ansi33">            "removes": null, </span>
+<span class="ansi33">            "stdin": null, </span>
+<span class="ansi33">            "warn": true</span>
+<span class="ansi33">        }</span>
+<span class="ansi33">    }, </span>
+<span class="ansi33">    "rc": 0, </span>
+<span class="ansi33">    "start": "2018-09-23 18:07:21.924708", </span>
+<span class="ansi33">    "stderr": "400\n401", </span>
+<span class="ansi33">    "stderr_lines": [</span>
+<span class="ansi33">        "400", </span>
+<span class="ansi33">        "401"</span>
+<span class="ansi33">    ], </span>
+<span class="ansi33">    "stdout": "200\n201", </span>
+<span class="ansi33">    "stdout_lines": [</span>
+<span class="ansi33">        "200", </span>
+<span class="ansi33">        "201"</span>
+<span class="ansi33">    ]</span>
+<span class="ansi33">}</span>
+
+TASK [2 lines on stdout and 2 on stderr with rc=1] **************************************************************************************************************************************
+<span class="ansi1 ansi30">task path: /Users/ssbarnea/os/os/ansible-output/sample-a.yml:13</span>
+Sunday 23 September 2018  18:07:21 +0100 (0:00:08.283)       0:00:10.374 ****** 
+<span class="ansi34">Using module file /Users/ssbarnea/.pyenv/versions/2.7.14/lib/python2.7/site-packages/ansible/modules/commands/command.py</span>
+<span class="ansi34">&lt;localhost&gt; ESTABLISH LOCAL CONNECTION FOR USER: ssbarnea</span>
+<span class="ansi34">&lt;localhost&gt; EXEC /bin/sh -c '/usr/bin/python &amp;&amp; sleep 0'</span>
+<span class="ansi31">fatal: [localhost]: FAILED! =&gt; {</span>
+<span class="ansi31">    "changed": true, </span>
+<span class="ansi31">    "cmd": "seq 200 201; &gt;&amp;2 seq 400 401; exit 1", </span>
+<span class="ansi31">    "delta": "0:00:00.019967", </span>
+<span class="ansi31">    "end": "2018-09-23 18:07:24.571658", </span>
+<span class="ansi31">    "invocation": {</span>
+<span class="ansi31">        "module_args": {</span>
+<span class="ansi31">            "_raw_params": "seq 200 201; &gt;&amp;2 seq 400 401; exit 1", </span>
+<span class="ansi31">            "_uses_shell": true, </span>
+<span class="ansi31">            "chdir": null, </span>
+<span class="ansi31">            "creates": null, </span>
+<span class="ansi31">            "executable": null, </span>
+<span class="ansi31">            "removes": null, </span>
+<span class="ansi31">            "stdin": null, </span>
+<span class="ansi31">            "warn": true</span>
+<span class="ansi31">        }</span>
+<span class="ansi31">    }, </span>
+<span class="ansi31">    "msg": "non-zero return code", </span>
+<span class="ansi31">    "rc": 1, </span>
+<span class="ansi31">    "start": "2018-09-23 18:07:24.551691", </span>
+<span class="ansi31">    "stderr": "400\n401", </span>
+<span class="ansi31">    "stderr_lines": [</span>
+<span class="ansi31">        "400", </span>
+<span class="ansi31">        "401"</span>
+<span class="ansi31">    ], </span>
+<span class="ansi31">    "stdout": "200\n201", </span>
+<span class="ansi31">    "stdout_lines": [</span>
+<span class="ansi31">        "200", </span>
+<span class="ansi31">        "201"</span>
+<span class="ansi31">    ]</span>
+<span class="ansi31">}</span>
+
+PLAY RECAP ******************************************************************************************************************************************************************************
+<span class="ansi31">localhost</span>                  : <span class="ansi32">ok=1   </span> <span class="ansi33">changed=1   </span> unreachable=0    <span class="ansi31">failed=1   </span>
+
+Sunday 23 September 2018  18:07:24 +0100 (0:00:02.618)       0:00:12.993 ****** 
+=============================================================================== 
+2 lines on stdout and 2 on stderr with rc=0 -------------------------------------------------------------------------------------------------------------------------------------- 8.28s
+/Users/ssbarnea/os/os/ansible-output/sample-a.yml:10 -----------------------------------------------------------------------------------------------------------------------------------
+2 lines on stdout and 2 on stderr with rc=1 -------------------------------------------------------------------------------------------------------------------------------------- 2.62s
+/Users/ssbarnea/os/os/ansible-output/sample-a.yml:13 -----------------------------------------------------------------------------------------------------------------------------------
+Playbook run took 0 days, 0 hours, 0 minutes, 12 seconds
+
+</pre>
+</body>
+
+</html>

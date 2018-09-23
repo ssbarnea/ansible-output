@@ -1,0 +1,67 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title></title>
+<style type="text/css">
+.ansi2html-content { display: inline; white-space: pre-wrap; word-wrap: break-word; }
+.body_foreground { color: #AAAAAA; }
+.body_background { background-color: #000000; }
+.body_foreground > .bold,.bold > .body_foreground, body.body_foreground > pre > .bold { color: #FFFFFF; font-weight: normal; }
+.inv_foreground { color: #000000; }
+.inv_background { background-color: #AAAAAA; }
+.ansi31 { color: #aa0000; }
+.ansi32 { color: #00aa00; }
+.ansi33 { color: #aa5500; }
+</style>
+</head>
+<body class="body_foreground body_background" style="font-size: normal;" >
+<pre class="ansi2html-content">
+
+PLAY [test output] **********************************************************************************************************************************************************************
+
+TASK [2 lines on stdout and 2 on stderr with rc=0] **************************************************************************************************************************************
+Sunday 23 September 2018  18:07:11 +0100 (0:00:01.364)       0:00:01.364 ****** 
+<span class="ansi33">changed: [localhost]</span>
+
+TASK [2 lines on stdout and 2 on stderr with rc=1] **************************************************************************************************************************************
+Sunday 23 September 2018  18:07:17 +0100 (0:00:06.000)       0:00:07.365 ****** 
+<span class="ansi31">fatal: [localhost]: FAILED! =&gt; {</span>
+<span class="ansi31">    "changed": true, </span>
+<span class="ansi31">    "cmd": "seq 200 201; &gt;&amp;2 seq 400 401; exit 1", </span>
+<span class="ansi31">    "delta": "0:00:00.148970", </span>
+<span class="ansi31">    "end": "2018-09-23 18:07:21.268283", </span>
+<span class="ansi31">    "rc": 1, </span>
+<span class="ansi31">    "start": "2018-09-23 18:07:21.119313"</span>
+<span class="ansi31">}</span>
+<span class="ansi31"></span>
+<span class="ansi31">STDOUT:</span>
+<span class="ansi31"></span>
+<span class="ansi31">200</span>
+<span class="ansi31">201</span>
+<span class="ansi31"></span>
+<span class="ansi31"></span>
+<span class="ansi31">STDERR:</span>
+<span class="ansi31"></span>
+<span class="ansi31">400</span>
+<span class="ansi31">401</span>
+<span class="ansi31"></span>
+<span class="ansi31"></span>
+<span class="ansi31">MSG:</span>
+<span class="ansi31"></span>
+<span class="ansi31">non-zero return code</span>
+<span class="ansi31"></span>
+
+PLAY RECAP ******************************************************************************************************************************************************************************
+<span class="ansi31">localhost</span>                  : <span class="ansi32">ok=1   </span> <span class="ansi33">changed=1   </span> unreachable=0    <span class="ansi31">failed=1   </span>
+
+Sunday 23 September 2018  18:07:21 +0100 (0:00:04.154)       0:00:11.519 ****** 
+=============================================================================== 
+2 lines on stdout and 2 on stderr with rc=0 -------------------------------------------------------------------------------------------------------------------------------------- 6.00s
+2 lines on stdout and 2 on stderr with rc=1 -------------------------------------------------------------------------------------------------------------------------------------- 4.15s
+Playbook run took 0 days, 0 hours, 0 minutes, 10 seconds
+
+</pre>
+</body>
+
+</html>
